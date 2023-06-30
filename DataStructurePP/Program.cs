@@ -23,7 +23,7 @@
             numbers.Clear();
 
             Console.WriteLine("Count: " + numbers.Count); // Output: 0
-
+    
             Console.WriteLine("________________________________");
             Console.WriteLine("Stack Implemetation");
             Stack<int> stack = new Stack<int>(5);
@@ -42,6 +42,25 @@
             stack.Clear();
             Console.WriteLine("Count: " + stack.Count); // Output: 0
             Console.WriteLine("Is Empty: " + stack.IsEmpty()); // Output: True
+
+            Console.WriteLine("________________________________________");
+            Console.WriteLine("Create generic class custom Queue datastructure .");
+            Queue<int> queue = new Queue<int>(5);
+
+            queue.Enqueue(1);
+            queue.Enqueue(2);
+            queue.Enqueue(3);
+
+            Console.WriteLine("Count: " + queue.Count); // Output: 3
+            Console.WriteLine("Peek: " + queue.Peek()); // Output: 1
+
+            int dequeuedItem = queue.Dequeue();
+            Console.WriteLine("Dequeued Item: " + dequeuedItem); // Output: 1
+            Console.WriteLine("Count: " + queue.Count); // Output: 2
+
+            queue.Clear();
+            Console.WriteLine("Count: " + queue.Count); // Output: 0
+            Console.WriteLine("Is Empty: " + queue.IsEmpty()); // Output: True
         }
     }
 }
