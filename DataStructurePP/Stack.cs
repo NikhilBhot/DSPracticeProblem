@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace DataStructurePP
 {
+    //Create generic class custom Stack datastructure .
     public class Stack<T>
     {
         private T[] elements;
