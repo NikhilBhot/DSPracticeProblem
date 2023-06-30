@@ -23,6 +23,25 @@
             numbers.Clear();
 
             Console.WriteLine("Count: " + numbers.Count); // Output: 0
+
+            Console.WriteLine("________________________________");
+            Console.WriteLine("Stack Implemetation");
+            Stack<int> stack = new Stack<int>(5);
+
+            stack.Push(1);
+            stack.Push(2);
+            stack.Push(3);
+
+            Console.WriteLine("Count: " + stack.Count); // Output: 3
+            Console.WriteLine("Peek: " + stack.Peek()); // Output: 3
+
+            int poppedItem = stack.Pop();
+            Console.WriteLine("Popped Item: " + poppedItem); // Output: 3
+            Console.WriteLine("Count: " + stack.Count); // Output: 2
+
+            stack.Clear();
+            Console.WriteLine("Count: " + stack.Count); // Output: 0
+            Console.WriteLine("Is Empty: " + stack.IsEmpty()); // Output: True
         }
     }
 }
